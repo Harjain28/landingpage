@@ -1,0 +1,19 @@
+.product_card_title {
+  background-color: #F76B6A;
+
+  :global(a) {
+    text-decoration: none !important;
+    color: #fff;
+  }
+}
+
+.header_main {
+  border-bottom: 1px solid gainsboro;
+  :global(.nav-link) {
+    font-size: 18px;
+
+    :global(svg) {
+      font-size: 21px;
+    }
+  }
+}
