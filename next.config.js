@@ -4,6 +4,7 @@ const webpack = require("webpack");
 
 
 const nextConfig = {
+  output: "export",
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         config.plugins.push(
             new webpack.ProvidePlugin({
@@ -20,7 +21,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    distDir : "out",
+    // distDir : "out",
     // basePath: '/designer/newpages/landingpage',
 };
 module.exports = nextConfig;
